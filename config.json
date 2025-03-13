@@ -1,0 +1,9 @@
+{
+    "interval": 10,
+    "dashboard_url": "https://127.0.0.1/api/metrics",
+    "thresholds": {
+        "cpu": 80,
+        "memory": 80,
+        "disk": 80
+    }
+}
