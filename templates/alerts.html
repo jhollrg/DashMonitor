@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+    <link rel="stylesheet" href="C:\Users\Roman\PycharmProjects\DashMonitor\static\styles.css">
+</head>
+<body>
+    <h1>Alerts</h1>
+    <table>
+        <tr>
+            <th>Server ID</th>
+            <th>Timestamp</th>
+            <th>Metric Type</th>
+            <th>Threshold</th>
+            <th>Actual Value</th>
+        </tr>
+        {% for alert in alerts %}
+            <tr>
+                <td>{{ alert[1] }}</td>
+                <td>{{ alert[2] }}</td>
+                <td>{{ alert[3] }}</td>
+                <td>{{ alert[4] }}</td>
+                <td>{{ alert[5] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
